@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fisioterapia · Elan Castro</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+
+<!-- ════════════════════════════════════════════════════════
+     HEADER
+════════════════════════════════════════════════════════ -->
+<header>
+  <nav class="container">
+
+    <a href="#inicio" class="logo">
+      <!-- LOGO: reemplaza TU-LOGO.png -->
+      <div class="logo-img">
+        <img src="assets/logo.png" alt="Logo"
+             onerror="this.style.display='none';
+                      this.parentNode.innerHTML='<span style=\'font-family:var(--serif);font-size:1.1rem;color:var(--brown)\'>F</span>'"/>
+      </div>
+      <div class="logo-text">
+        Elan Castro
+        <span>Fisioterapeuta y Terapeuta Ocupacional</span>
+      </div>
+    </a>
+
+    <!-- Botón hamburguesa (móvil) -->
+    <button class="menu-toggle" id="menuBtn" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Menú de navegación -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#valores">Valores</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#contacto" class="btn btn-primary nav-cta">Agendar cita</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+
+<!-- ════════════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════════ -->
+<section class="hero" id="inicio">
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- Texto principal -->
+      <div class="hero-content fade-up">
+        <div class="hero-badge">Fisioterapia especializada</div>
+        <h1 class="hero-title">
+          Desde el <br>
+          <em>dolor a tu </em>
+          recuperación
+        </h1>
+        <p class="hero-desc">
+          Soy Elan Castro, fisioterapeuta certificada con más de X años de experiencia
+          ayudando a personas a recuperar su calidad de vida a través de un tratamiento
+          personalizado y humano.
+        </p>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn-primary">Agenda tu consulta</a>
+          <a href="#sobre-mi"  class="btn btn-outline">Conoce más</a>
+        </div>
+
+        <div class="hero-stat-bar">
+          <div class="stat">
+            <span class="stat-num">+500</span>
+            <span class="stat-lbl">Pacientes atendidos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">8</span>
+            <span class="stat-lbl">Años de experiencia</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">98%</span>
+            <span class="stat-lbl">Satisfacción</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Foto hero -->
+      <div class="hero-photo fade-up" style="transition-delay:.2s">
+        <div class="hero-photo-frame">
+          <!-- FOTO: reemplaza TU-FOTO-HERO.jpg -->
+          <img src="assets/hero.png" alt="Elan Castro, Fisioterapeuta"
+               onerror="this.style.display='none';
+                        this.parentNode.insertAdjacentHTML('beforeend',
+                          '<div class=\'placeholder-hero\'>' +
+                          '<svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1\'>' +
+                          '<path d=\'M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z\'/>' +
+                          '</svg><p>Tu foto aquí</p></div>')"/>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     SOBRE MÍ
+════════════════════════════════════════════════════════ -->
+<section class="about" id="sobre-mi">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Imagen secundaria -->
+      <div class="about-img fade-up">
+        <!-- IMAGEN: reemplaza FOTO-SOBRE-MI.jpg -->
+        <img src="FOTO-SOBRE-MI.jpg" alt="En consulta"
+             onerror="this.style.display='none'"/>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+          <rect x="2" y="3" width="20" height="14" rx="2"/>
+          <path d="M8 21h8M12 17v4"/>
+        </svg>
+        <span>Tu imagen aquí</span>
+      </div>
+
+      <!-- Texto -->
+      <div class="about-body fade-up" style="transition-delay:.15s">
+        <p class="section-label">Sobre mí</p>
+        <h2 class="section-title">Una <em>trayectoria</em><br>dedicada al cuidado</h2>
+        <p>
+          Soy Elan Castro, fisioterapeuta egresada de Rafael Landivar. Mi enfoque combina técnicas basadas en evidencia con
+          un trato cercano y empático hacia cada paciente.
+        </p>
+        <p>
+          A lo largo de mi carrera he trabajado en [hospitales, clínicas, contextos].
+          Creo profundamente en que la fisioterapia no solo recupera el cuerpo, sino que
+          también transforma la calidad de vida de las personas.
+        </p>
+        <div class="credentials">
+          <span class="credential-tag">Licenciatura en Fisioterapia</span>
+          <span class="credential-tag">Especialidad en [área]</span>
+          <span class="credential-tag">Certificación [nombre]</span>
+          <span class="credential-tag">Colegiado N.° 0000</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     VALORES
+════════════════════════════════════════════════════════ -->
+<section class="values" id="valores">
+  <div class="container">
+
+    <div class="values-header fade-up">
+      <p class="section-label">Lo que me define</p>
+      <h2 class="section-title">Mis <em>valores</em></h2>
+    </div>
+
+    <div class="values-grid">
+      <div class="value-card fade-up">
+        <div class="value-icon">🤝</div>
+        <h3>Empatía</h3>
+        <p>Escucho y entiendo cada caso de forma individual, poniendo al paciente en el centro de cada decisión.</p>
+      </div>
+      <div class="value-card fade-up" style="transition-delay:.1s">
+        <div class="value-icon">🔬</div>
+        <h3>Evidencia científica</h3>
+        <p>Aplico técnicas respaldadas por la investigación más actualizada para garantizar resultados reales.</p>
+      </div>
+      <div class="value-card fade-up" style="transition-delay:.2s">
+        <div class="value-icon">💡</div>
+        <h3>Educación continua</h3>
+        <p>Me actualizo constantemente para ofrecerte los tratamientos más modernos y efectivos del campo.</p>
+      </div>
+      <div class="value-card fade-up" style="transition-delay:.3s">
+        <div class="value-icon">✨</div>
+        <h3>Excelencia</h3>
+        <p>Cada sesión es diseñada con cuidado para maximizar tu recuperación y bienestar integral.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     SERVICIOS
+════════════════════════════════════════════════════════ -->
+<section class="services" id="servicios">
+  <div class="container">
+    <p class="section-label">Lo que ofrezco</p>
+    <h2 class="section-title">Mis <em>servicios</em></h2>
+
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <span class="service-num">01</span>
+        <div>
+          <h3>Fisioterapia deportiva</h3>
+          <p>Rehabilitación y prevención de lesiones para deportistas de todos los niveles.</p>
+        </div>
+      </div>
+      <div class="service-card fade-up" style="transition-delay:.1s">
+        <span class="service-num">02</span>
+        <div>
+          <h3>Rehabilitación neurológica</h3>
+          <p>Tratamiento especializado para secuelas de ACV, Parkinson y otras condiciones neurológicas.</p>
+        </div>
+      </div>
+      <div class="service-card fade-up" style="transition-delay:.15s">
+        <span class="service-num">03</span>
+        <div>
+          <h3>Fisioterapia pediátrica</h3>
+          <p>Atención especializada para niños con alteraciones del desarrollo motor.</p>
+        </div>
+      </div>
+      <div class="service-card fade-up" style="transition-delay:.2s">
+        <span class="service-num">04</span>
+        <div>
+          <h3>Dolor crónico y postural</h3>
+          <p>Evaluación y tratamiento de cervicalgias, lumbalgias y desequilibrios posturales.</p>
+        </div>
+      </div>
+      <div class="service-card fade-up" style="transition-delay:.25s">
+        <span class="service-num">05</span>
+        <div>
+          <h3>Terapia manual</h3>
+          <p>Técnicas de movilización articular y tejidos blandos para aliviar el dolor.</p>
+        </div>
+      </div>
+      <div class="service-card fade-up" style="transition-delay:.3s">
+        <span class="service-num">06</span>
+        <div>
+          <h3>Consulta online</h3>
+          <p>Valoración y seguimiento a distancia, desde la comodidad de tu hogar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     VIDEOS
+════════════════════════════════════════════════════════ -->
+<section class="videos-section" id="videos">
+  <div class="container">
+
+    <div class="videos-header fade-up">
+      <p class="section-label">Contenido educativo</p>
+      <h2 class="section-title">Mis <em>videos</em></h2>
+    </div>
+
+    <div class="videos-grid">
+
+      <!-- VIDEO 1 -->
+      <div class="video-card fade-up">
+        <div class="video-wrapper has-video">
+          <video 
+            src="assets/video1.mp4" 
+            autoplay 
+            muted 
+            loop 
+            playsinline>
+          </video>
+        </div>
+        <div class="video-caption">
+          <h4>Título del video 1</h4>
+          <p>Breve descripción del contenido de este video.</p>
+        </div>
+      </div>
+
+      <!-- VIDEO 2 -->
+      <div class="video-card fade-up" style="transition-delay:.1s">
+        <div class="video-wrapper has-video">
+          <video 
+            src="assets/video2.mp4" 
+            autoplay 
+            muted 
+            loop 
+            playsinline>
+          </video>
+        </div>
+        <div class="video-caption">
+          <h4>Título del video 2</h4>
+          <p>Breve descripción del contenido de este video.</p>
+        </div>
+      </div>
+
+      <!-- VIDEO 3 -->
+      <div class="video-card fade-up" style="transition-delay:.2s">
+        <div class="video-wrapper has-video">
+          <video 
+            src="assets/video3.mp4" 
+            autoplay 
+            muted 
+            loop 
+            playsinline>
+          </video>
+        </div>
+        <div class="video-caption">
+          <h4>Título del video 3</h4>
+          <p>Breve descripción del contenido de este video.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     GALERÍA
+════════════════════════════════════════════════════════ -->
+<section class="gallery" id="galeria">
+  <div class="container">
+
+    <div class="gallery-header fade-up">
+      <p class="section-label">Instalaciones y equipo</p>
+      <h2 class="section-title">Galería de <em>imágenes</em></h2>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- REEMPLAZA src con tus imágenes reales -->
+      <div class="gallery-item tall">
+        <img src="galeria-1.jpg" alt="Imagen 1" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <circle cx="8.5" cy="8.5" r="1.5"/>
+            <polyline points="21 15 16 10 5 21"/>
+          </svg>
+          <span>Imagen 1</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="galeria-2.jpg" alt="Imagen 2" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Imagen 2</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="galeria-3.jpg" alt="Imagen 3" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Imagen 3</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="galeria-4.jpg" alt="Imagen 4" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Imagen 4</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="galeria-5.jpg" alt="Imagen 5" onerror="this.style.display='none'"/>
+        <div class="gallery-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Imagen 5</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     CTA
+════════════════════════════════════════════════════════ -->
+<section class="cta-section">
+  <div class="container fade-up">
+    <p class="section-label">¿Lista para empezar?</p>
+    <h2 class="cta-title">Tu recuperación<br><em>comienza hoy</em></h2>
+    <p class="cta-desc">Agenda una consulta inicial y juntos trazamos el camino hacia tu bienestar.</p>
+    <a href="#contacto" class="btn btn-light">Reservar mi cita</a>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     CONTACTO
+════════════════════════════════════════════════════════ -->
+<section class="contact" id="contacto">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Información de contacto -->
+      <div class="contact-info fade-up">
+        <p class="section-label">Contáctame</p>
+        <h3>Hablemos sobre<br>tu tratamiento</h3>
+        <p>Estoy aquí para resolver tus dudas y ayudarte a dar el primer paso hacia tu recuperación.</p>
+
+        <div class="contact-detail">
+          <div class="contact-icon">📍</div>
+          <span>Ciudad, País — Dirección de la clínica</span>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">📞</div>
+          <span>+000 000 000 000</span>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">✉️</div>
+          <span>hola@tunombre.com</span>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">🕐</div>
+          <span>Lunes a Viernes · 8:00 am – 6:00 pm</span>
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="fade-up" style="transition-delay:.15s">
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required/>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required/>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+000 000 000"/>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">¿En qué puedo ayudarte?</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Cuéntame sobre tu situación..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%">Enviar mensaje</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+
+      <!-- Marca -->
+      <div class="footer-brand">
+        <a href="#inicio" class="logo">
+          <div class="logo-img">
+            <img src="TU-LOGO.png" alt="Logo"
+                 onerror="this.style.display='none';
+                          this.parentNode.innerHTML='<span style=\'font-family:var(--serif);font-size:1.1rem;color:var(--warm)\'>F</span>'"/>
+          </div>
+          <div class="logo-text">
+            Tu Nombre
+            <span>Fisioterapeuta</span>
+          </div>
+        </a>
+        <p>Comprometida con tu salud y movimiento, un tratamiento personalizado a la vez.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram">📷</a>
+          <a href="#" class="social-link" aria-label="Facebook">📘</a>
+          <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+        </div>
+      </div>
+
+      <!-- Navegación -->
+      <nav class="footer-nav">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#valores">Valores</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#galeria">Galería</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contacto rápido -->
+      <nav class="footer-nav">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+000000000">+000 000 000</a></li>
+          <li><a href="mailto:hola@tunombre.com">hola@tunombre.com</a></li>
+          <li><a href="#contacto">Agendar cita</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Tu Nombre · Fisioterapeuta. Todos los derechos reservados.</span>
+      <span>Hecho con ♥ para tus pacientes</span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Script externo al final del body -->
+<script src="main.js"></script>
+</body>
+</html>
